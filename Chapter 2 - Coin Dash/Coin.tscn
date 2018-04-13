@@ -1,0 +1,78 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Coin.gd" type="Script" id=1]
+[ext_resource path="res://assets/coin/coin-frame-1.png" type="Texture" id=2]
+[ext_resource path="res://assets/coin/coin-frame-2.png" type="Texture" id=3]
+[ext_resource path="res://assets/coin/coin-frame-3.png" type="Texture" id=4]
+[ext_resource path="res://assets/coin/coin-frame-4.png" type="Texture" id=5]
+[ext_resource path="res://assets/coin/coin-frame-5.png" type="Texture" id=6]
+[ext_resource path="res://assets/coin/coin-frame-6.png" type="Texture" id=7]
+[ext_resource path="res://assets/coin/coin-frame-7.png" type="Texture" id=8]
+[ext_resource path="res://assets/coin/coin-frame-8.png" type="Texture" id=9]
+[ext_resource path="res://assets/coin/coin-frame-9.png" type="Texture" id=10]
+[ext_resource path="res://assets/coin/coin-frame-10.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 24.4661
+
+[node name="Coin" type="Area2D" groups=[
+"coins",
+]]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+shape = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="." index="2"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="Tween" type="Tween" parent="." index="3"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[connection signal="area_entered" from="." to="." method="_on_Coin_area_entered"]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+[connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
+
+

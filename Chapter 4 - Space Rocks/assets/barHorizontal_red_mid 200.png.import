@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/barHorizontal_red_mid 200.png-52b086b7226335febf34b1e375329331.stex"
+
+[deps]
+
+source_file="res://assets/barHorizontal_red_mid 200.png"
+source_md5="4ca884195325071c86dda58eb3ad2341"
+
+dest_files=[ "res://.import/barHorizontal_red_mid 200.png-52b086b7226335febf34b1e375329331.stex" ]
+dest_md5="516796520a75d44abd51edac4404cdf8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

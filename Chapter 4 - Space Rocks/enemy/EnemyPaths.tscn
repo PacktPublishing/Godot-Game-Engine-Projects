@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="Curve2D" id=1]
+
+bake_interval = 5.0
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 27, -33, 0, 0, 37.1798, 108.679, 151, 179, 0, 0, 120.119, 36.2265, 363, 324, -181.132, 24.7865, 273.605, -81.9862, 602, 394, 0, 0, 68.6396, 32.4132, 926, 376, 0, 0, 0, 0, 1017, 676 )
+}
+
+[sub_resource type="Curve2D" id=2]
+
+bake_interval = 5.0
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1118, 498, 0, 0, -120.119, -127.746, 914, 268, 145.859, 85.7995, -178.272, -67.6863, 617, 137, -45.7598, -205.919, 63.873, 167.786, 300, 348, 0, 0, 0, 0, 93, 467, 0, 0, 0, 0, -80, 397 )
+}
+
+[sub_resource type="Curve2D" id=3]
+
+bake_interval = 5.0
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 172, 681, 0, 0, 0, 0, 746, 522, 92.0501, 317.991, -84.728, -175.732, 900, 150, 119.247, -30.3347, -160.042, 13.5983, 490, 51, 0, 0, -122.385, 126.569, 142, 229, 0, 0, 0, 0, -98, 340 )
+}
+
+[node name="EnemyPaths" type="Node"]
+
+[node name="Path1" type="Path2D" parent="." index="0"]
+
+curve = SubResource( 1 )
+
+[node name="Path2" type="Path2D" parent="." index="1"]
+
+visible = false
+curve = SubResource( 2 )
+
+[node name="Path3" type="Path2D" parent="." index="2"]
+
+visible = false
+curve = SubResource( 3 )
+
+

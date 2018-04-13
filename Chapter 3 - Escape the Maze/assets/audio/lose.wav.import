@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lose.wav-f2031eeaf36f7f1c79209a028e6ed60e.sample"
+
+[deps]
+
+source_file="res://assets/audio/lose.wav"
+source_md5="e400893f7779cc4045e4fcee62f97571"
+
+dest_files=[ "res://.import/lose.wav-f2031eeaf36f7f1c79209a028e6ed60e.sample" ]
+dest_md5="b3e6964e09922437116e71666a38fa9e"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

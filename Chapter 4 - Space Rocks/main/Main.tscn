@@ -1,0 +1,99 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://main/Main.gd" type="Script" id=1]
+[ext_resource path="res://rock/Rock.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy/Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/backgrounds/eye_nebula_01.png" type="Texture" id=4]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/sounds/zap2a.ogg" type="AudioStream" id=7]
+[ext_resource path="res://assets/sounds/Funky-Gameplay_Looping.ogg" type="AudioStream" id=8]
+
+[sub_resource type="Curve2D" id=1]
+
+bake_interval = 5.0
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1026, 0, 0, 0, 0, 0, 1024, 600, 0, 0, 0, 0, 0, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1026, 0 )
+}
+
+[node name="Main" type="Node" index="0"]
+
+pause_mode = 2
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+Rock = ExtResource( 2 )
+Enemy = ExtResource( 3 )
+
+[node name="Background" type="Sprite" parent="." index="0"]
+
+position = Vector2( 513, 307 )
+scale = Vector2( 0.603125, 0.603125 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="Player" parent="." index="1" instance=ExtResource( 5 )]
+
+pause_mode = 1
+_sections_unfolded = [ "Angular", "Linear", "Pause", "Transform" ]
+
+[node name="Rocks" type="Node" parent="." index="2"]
+
+pause_mode = 1
+_sections_unfolded = [ "Pause" ]
+
+[node name="RockPath" type="Path2D" parent="." index="3"]
+
+curve = SubResource( 1 )
+
+[node name="RockSpawn" type="PathFollow2D" parent="RockPath" index="0"]
+
+position = Vector2( 1026, 0 )
+rotation = 1.57414
+offset = 0.0
+h_offset = 0.0
+v_offset = 0.0
+rotate = true
+cubic_interp = true
+loop = true
+lookahead = 4.0
+
+[node name="HUD" parent="." index="4" instance=ExtResource( 6 )]
+
+pause_mode = 1
+
+[node name="LevelupSound" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = ExtResource( 7 )
+volume_db = -10.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Music" type="AudioStreamPlayer" parent="." index="6"]
+
+stream = ExtResource( 8 )
+volume_db = -10.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="EnemyTimer" type="Timer" parent="." index="7"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
+
+[connection signal="dead" from="Player" to="." method="game_over"]
+
+[connection signal="lives_changed" from="Player" to="HUD" method="update_lives"]
+
+[connection signal="shield_changed" from="Player" to="HUD" method="update_shield"]
+
+[connection signal="shoot" from="Player" to="." method="_on_Player_shoot"]
+
+[connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
+
+[connection signal="timeout" from="EnemyTimer" to="." method="_on_EnemyTimer_timeout"]
+
+

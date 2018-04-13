@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://rock/Rock.gd" type="Script" id=1]
+[ext_resource path="res://assets/b10000.png" type="Texture" id=2]
+[ext_resource path="res://explosion/Explosion.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/sounds/synthetic_thunder_short.wav" type="AudioStream" id=4]
+
+[node name="Rock" type="RigidBody2D" groups=[
+"rocks",
+]]
+
+position = Vector2( 64.2693, 58.5424 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 10.0
+friction = 1.0
+bounce = 0.5
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = 0.0
+angular_velocity = 0.0
+angular_damp = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Angular", "Collision", "Linear" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+region_rect = Rect2( 214, 832, 212, 218 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Explosion" parent="." index="1" instance=ExtResource( 3 )]
+
+[node name="ExplodeSound" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 4 )
+volume_db = -10.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[connection signal="animation_finished" from="Explosion/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+
+
+[editable path="Explosion"]
