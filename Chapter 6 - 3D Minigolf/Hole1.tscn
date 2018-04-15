@@ -1,0 +1,331 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Hole1.gd" type="Script" id=1]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/course_tiles1.tres" type="MeshLibrary" id=3]
+[ext_resource path="res://assets/bar_red.png" type="Texture" id=4]
+[ext_resource path="res://Arrow.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GimbalTest.gd" type="Script" id=6]
+
+[sub_resource type="Environment" id=1]
+
+background_mode = 0
+background_sky_custom_fov = 0.0
+background_color = Color( 0, 0, 0, 1 )
+background_energy = 1.0
+background_canvas_max_layer = 0
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 1.0
+ambient_light_sky_contribution = 1.0
+fog_enabled = false
+fog_color = Color( 0.5, 0.6, 0.7, 1 )
+fog_sun_color = Color( 1, 0.9, 0.7, 1 )
+fog_sun_amount = 0.0
+fog_depth_enabled = true
+fog_depth_begin = 10.0
+fog_depth_curve = 1.0
+fog_transmit_enabled = false
+fog_transmit_curve = 1.0
+fog_height_enabled = false
+fog_height_min = 0.0
+fog_height_max = 100.0
+fog_height_curve = 1.0
+tonemap_mode = 0
+tonemap_exposure = 1.0
+tonemap_white = 1.0
+auto_exposure_enabled = false
+auto_exposure_scale = 0.4
+auto_exposure_min_luma = 0.05
+auto_exposure_max_luma = 8.0
+auto_exposure_speed = 0.5
+ss_reflections_enabled = false
+ss_reflections_max_steps = 64
+ss_reflections_fade_in = 0.15
+ss_reflections_fade_out = 2.0
+ss_reflections_depth_tolerance = 0.2
+ss_reflections_roughness = true
+ssao_enabled = false
+ssao_radius = 1.0
+ssao_intensity = 1.0
+ssao_radius2 = 0.0
+ssao_intensity2 = 1.0
+ssao_bias = 0.01
+ssao_light_affect = 0.0
+ssao_color = Color( 0, 0, 0, 1 )
+ssao_quality = 0
+ssao_blur = 3
+ssao_edge_sharpness = 4.0
+dof_blur_far_enabled = false
+dof_blur_far_distance = 10.0
+dof_blur_far_transition = 5.0
+dof_blur_far_amount = 0.1
+dof_blur_far_quality = 1
+dof_blur_near_enabled = false
+dof_blur_near_distance = 2.0
+dof_blur_near_transition = 1.0
+dof_blur_near_amount = 0.1
+dof_blur_near_quality = 1
+glow_enabled = false
+glow_levels/1 = false
+glow_levels/2 = false
+glow_levels/3 = true
+glow_levels/4 = false
+glow_levels/5 = true
+glow_levels/6 = false
+glow_levels/7 = false
+glow_intensity = 0.8
+glow_strength = 1.0
+glow_bloom = 0.0
+glow_blend_mode = 2
+glow_hdr_threshold = 1.0
+glow_hdr_scale = 2.0
+glow_bicubic_upscale = false
+adjustment_enabled = false
+adjustment_brightness = 1.0
+adjustment_contrast = 1.0
+adjustment_saturation = 1.0
+_sections_unfolded = [ "Ambient Light" ]
+
+[sub_resource type="BoxShape" id=2]
+
+extents = Vector3( 2.33566, 1.86078, 2.6573 )
+
+[sub_resource type="SphereShape" id=3]
+
+radius = 0.125169
+
+[node name="Hole1" type="Spatial"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
+
+environment = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="." index="1"]
+
+transform = Transform( 1, 0, 0, 0, 0.540908, 0.841082, 0, -0.841082, 0.540908, 0.682774, 8.702, 8.27183 )
+visible = false
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 100.0
+
+[node name="Camera2" type="Camera" parent="." index="2"]
+
+transform = Transform( 0.0319449, -0.307625, 0.950971, 0.0103278, 0.951508, 0.307451, -0.999436, 0, 0.0335729, 7.78766, 3.55565, -4.43652 )
+visible = false
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 100.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="Cam2Vis" type="Area" parent="Camera2" index="0"]
+
+transform = Transform( 0.999953, 0.00955201, -0.00138675, -0.00955202, 0.958671, -0.284355, -0.00138674, 0.284356, 0.958718, 1.56894, 1.41302, -4.42574 )
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="Camera2/Cam2Vis" index="0"]
+
+transform = Transform( 1, -4.49951e-11, 4.47035e-08, -3.25464e-10, 1, 1.65745e-08, 0, -1.19538e-08, 1, 0.029078, -1.80177, 0.865625 )
+shape = SubResource( 2 )
+disabled = false
+
+[node name="Ball" parent="." index="3" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.31805, 1.18196, 4.97837 )
+bounce = 0.2
+gravity_scale = 5.0
+linear_damp = 0.9
+_sections_unfolded = [ "Linear" ]
+
+[node name="GridMap" type="GridMap" parent="." index="4"]
+
+theme = ExtResource( 3 )
+cell_size = Vector3( 2, 2, 2 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 0, 655372, 0, 1, 655372, 0, 2, 655372, 0, 3, 655366, 0, 65533, 3, 1, 65533, 1441804, 2, 65533, 1441803, 65534, 65533, 1048581, 65535, 65533, 1441804, 0, 65534, 655372, 0, 65535, 12 )
+}
+_sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Hole" type="Area" parent="." index="5"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.40447, 0.877468, -5.00638 )
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="Hole" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0657873, 0 )
+shape = SubResource( 3 )
+disabled = false
+
+[node name="Tee" type="Position3D" parent="." index="6"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.992028, 1.33503, 7.22744 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="7"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="TextureProgress" type="TextureProgress" parent="CanvasLayer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 47.0
+margin_top = 71.0
+margin_right = 103.0
+margin_bottom = 271.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 20.0
+exp_edit = false
+rounded = false
+texture_under = null
+texture_over = null
+texture_progress = ExtResource( 4 )
+fill_mode = 3
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Radial Fill", "Textures" ]
+
+[node name="Label" type="Label" parent="CanvasLayer" index="1"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 408.0
+margin_top = 78.0
+margin_right = 451.0
+margin_bottom = 92.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Shots: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Arrow" parent="." index="8" instance=ExtResource( 5 )]
+
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.14203, 0, 0 )
+
+[node name="GimbalOut" type="Spatial" parent="." index="9"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.947365, 1.17909, 0 )
+script = ExtResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="GimbalIn" type="Spatial" parent="GimbalOut" index="0"]
+
+transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Camera" type="Camera" parent="GimbalOut/GimbalIn" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = true
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 100.0
+_sections_unfolded = [ "Transform" ]
+
+[connection signal="stopped" from="Ball" to="." method="_on_Ball_stopped"]
+
+[connection signal="body_entered" from="Hole" to="." method="_on_Hole_body_entered"]
+
+

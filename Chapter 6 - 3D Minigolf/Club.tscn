@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/Club_red_01.obj" type="ArrayMesh" id=1]
+
+[node name="Club" type="Area"]
+
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.17553, -2.38419e-07, 0.301658 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 1 )
+skeleton = NodePath("..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+material/42 = null
+material/43 = null
+material/44 = null
+material/45 = null
+material/46 = null
+material/47 = null
+material/48 = null
+material/49 = null
+material/50 = null
+material/51 = null
+material/52 = null
+material/53 = null
+material/54 = null
+_sections_unfolded = [ "Transform" ]
+
+
