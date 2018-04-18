@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="Minigolf Test"
+config/name="3D Minigolf"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 

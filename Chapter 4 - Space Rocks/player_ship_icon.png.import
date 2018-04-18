@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ez_space_lite_01.png-b65810bc6cdd5a09685d6c2d57df5e9f.stex"
+path="res://.import/player_ship_icon.png-0cc1e651cc9833013b16fef490066863.stex"
 
 [deps]
 
-source_file="res://assets/backgrounds/ez_space_lite_01.png"
-source_md5="57004b799d16a09d9414c57ce5ba83e7"
+source_file="res://player_ship_icon.png"
+source_md5="5b37f497eda11af0e932fca8e77b1a5b"
 
-dest_files=[ "res://.import/ez_space_lite_01.png-b65810bc6cdd5a09685d6c2d57df5e9f.stex" ]
-dest_md5="50286533a931f383fc9827a4e0eb75c9"
+dest_files=[ "res://.import/player_ship_icon.png-0cc1e651cc9833013b16fef490066863.stex" ]
+dest_md5="0e3848d67bcb7febc164606436117785"
 
 [params]
 

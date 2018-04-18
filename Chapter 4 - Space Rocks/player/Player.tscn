@@ -2,7 +2,7 @@
 
 [ext_resource path="res://player/Player.gd" type="Script" id=1]
 [ext_resource path="res://bullet/Bullet.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/1.png" type="Texture" id=3]
+[ext_resource path="res://assets/player_ship.png" type="Texture" id=3]
 [ext_resource path="res://explosion/Explosion.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/sounds/synthetic_laser.ogg" type="AudioStream" id=5]
 [ext_resource path="res://assets/sounds/flight_sound.ogg" type="AudioStream" id=6]
@@ -77,7 +77,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Color", "Emission Shape", "Gravity", "Initial Velocity", "Scale", "Spread" ]
 
-[node name="Player" type="RigidBody2D"]
+[node name="Player" type="RigidBody2D" index="0"]
 
 position = Vector2( 386.056, 252.742 )
 input_pickable = false

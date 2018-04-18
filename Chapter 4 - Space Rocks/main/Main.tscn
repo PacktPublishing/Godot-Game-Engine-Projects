@@ -3,7 +3,7 @@
 [ext_resource path="res://main/Main.gd" type="Script" id=1]
 [ext_resource path="res://rock/Rock.tscn" type="PackedScene" id=2]
 [ext_resource path="res://enemy/Enemy.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/backgrounds/eye_nebula_01.png" type="Texture" id=4]
+[ext_resource path="res://assets/space_background.png" type="Texture" id=4]
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/sounds/zap2a.ogg" type="AudioStream" id=7]
@@ -16,7 +16,7 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1026, 0, 0, 0, 0, 0, 1024, 600, 0, 0, 0, 0, 0, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1026, 0 )
 }
 
-[node name="Main" type="Node" index="0"]
+[node name="Main" type="Node"]
 
 pause_mode = 2
 script = ExtResource( 1 )

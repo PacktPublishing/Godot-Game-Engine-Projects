@@ -12,7 +12,7 @@ config_version=3
 
 config/name="Space Rocks"
 run/main_scene="res://main/Main.tscn"
-config/icon="res://icon.png"
+config/icon="res://player_ship_icon.png"
 
 [display]
 

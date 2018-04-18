@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/eye_nebula_01.png-afaded3f83800d9a88ca88dce572c361.stex"
+path="res://.import/maze_icon.png-ecf3621c450bb74eee04db415c791682.stex"
 
 [deps]
 
-source_file="res://assets/backgrounds/eye_nebula_01.png"
-source_md5="a8793dea8d0d54fc5afa8fbe99d0797c"
+source_file="res://maze_icon.png"
+source_md5="47e0652bbcc4d218eaedb4329365efe4"
 
-dest_files=[ "res://.import/eye_nebula_01.png-afaded3f83800d9a88ca88dce572c361.stex" ]
-dest_md5="f03de4815b5fd62aa518886672647cb5"
+dest_files=[ "res://.import/maze_icon.png-ecf3621c450bb74eee04db415c791682.stex" ]
+dest_md5="3b5d44deff01e9719cd53d72eee4f907"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

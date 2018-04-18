@@ -10,9 +10,9 @@ config_version=3
 
 [application]
 
-config/name="book_platform_build"
+config/name="Jungle Jump"
 run/main_scene="res://ui/TitleScreen.tscn"
-config/icon="res://icon.png"
+config/icon="res://player_icon.png"
 
 [autoload]
 
