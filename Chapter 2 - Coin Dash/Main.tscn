@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Coin.tscn" type="PackedScene" id=2]
@@ -11,6 +11,16 @@
 [ext_resource path="res://assets/audio/Hit.wav" type="AudioStream" id=9]
 [ext_resource path="res://assets/audio/Powerup.wav" type="AudioStream" id=10]
 [ext_resource path="res://Cactus.tscn" type="PackedScene" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 100, 360 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 240, 120 )
 
 [node name="Main" type="Node" index="0"]
 
@@ -35,6 +45,8 @@ texture = ExtResource( 4 )
 stretch_mode = 2
 
 [node name="Player" parent="." index="1" instance=ExtResource( 5 )]
+
+position = Vector2( 96, 131 )
 
 [node name="CoinContainer" type="Node" parent="." index="2"]
 
@@ -94,6 +106,64 @@ process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = false
+
+[node name="TouchScreenButtons" type="Node" parent="." index="12"]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="TouchScreenButtons" index="0"]
+
+position = Vector2( 100, 360 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 1 )
+shape_centered = false
+shape_visible = true
+passby_press = false
+action = "ui_left"
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="TouchScreenButtons" index="1"]
+
+position = Vector2( 380, 360 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 1 )
+shape_centered = false
+shape_visible = true
+passby_press = false
+action = "ui_right"
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="TouchScreenButtons" index="2"]
+
+position = Vector2( 240, 600 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 2 )
+shape_centered = false
+shape_visible = true
+passby_press = false
+action = "ui_down"
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="TouchScreenButtons" index="3"]
+
+position = Vector2( 240, 120 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 2 )
+shape_centered = false
+shape_visible = true
+passby_press = false
+action = "ui_up"
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
 
 [connection signal="hurt" from="Player" to="." method="_on_Player_hurt"]
 

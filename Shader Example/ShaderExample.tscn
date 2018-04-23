@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://fill.shader" type="Shader" id=1]
+[ext_resource path="res://cactus.png" type="Texture" id=2]
+[ext_resource path="res://blur.shader" type="Shader" id=3]
+[ext_resource path="res://outline.shader" type="Shader" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+shader = ExtResource( 1 )
+shader_param/fill_color = Color( 0.502361, 0.271637, 0.808594, 1 )
+_sections_unfolded = [ "shader_param" ]
+
+[sub_resource type="ShaderMaterial" id=2]
+
+render_priority = 0
+shader = ExtResource( 3 )
+shader_param/radius = 10.0
+_sections_unfolded = [ "shader_param" ]
+
+[sub_resource type="ShaderMaterial" id=3]
+
+render_priority = 0
+shader = ExtResource( 4 )
+shader_param/outline_width = null
+shader_param/outline_color = Color( 0.984466, 0.992188, 0.00387573, 1 )
+_sections_unfolded = [ "shader_param" ]
+
+[node name="ShaderExample" type="Node2D" index="0"]
+
+[node name="Fill" type="Sprite" parent="." index="0"]
+
+material = SubResource( 1 )
+position = Vector2( 164.34, 244.023 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Transform" ]
+
+[node name="Blur" type="Sprite" parent="." index="1"]
+
+material = SubResource( 2 )
+position = Vector2( 426.339, 244.058 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Transform" ]
+
+[node name="Outline" type="Sprite" parent="." index="2"]
+
+material = SubResource( 3 )
+position = Vector2( 747.712, 240.293 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Transform" ]
+
+
