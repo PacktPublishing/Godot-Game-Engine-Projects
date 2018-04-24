@@ -5,14 +5,14 @@
 [ext_resource path="res://assets/player/idle/player-idle-2.png" type="Texture" id=3]
 [ext_resource path="res://assets/player/idle/player-idle-3.png" type="Texture" id=4]
 [ext_resource path="res://assets/player/idle/player-idle-4.png" type="Texture" id=5]
-[ext_resource path="res://assets/player/hurt/player-hurt-1.png" type="Texture" id=6]
-[ext_resource path="res://assets/player/hurt/player-hurt-2.png" type="Texture" id=7]
-[ext_resource path="res://assets/player/run/player-run-1.png" type="Texture" id=8]
-[ext_resource path="res://assets/player/run/player-run-2.png" type="Texture" id=9]
-[ext_resource path="res://assets/player/run/player-run-3.png" type="Texture" id=10]
-[ext_resource path="res://assets/player/run/player-run-4.png" type="Texture" id=11]
-[ext_resource path="res://assets/player/run/player-run-5.png" type="Texture" id=12]
-[ext_resource path="res://assets/player/run/player-run-6.png" type="Texture" id=13]
+[ext_resource path="res://assets/player/run/player-run-1.png" type="Texture" id=6]
+[ext_resource path="res://assets/player/run/player-run-2.png" type="Texture" id=7]
+[ext_resource path="res://assets/player/run/player-run-3.png" type="Texture" id=8]
+[ext_resource path="res://assets/player/run/player-run-4.png" type="Texture" id=9]
+[ext_resource path="res://assets/player/run/player-run-5.png" type="Texture" id=10]
+[ext_resource path="res://assets/player/run/player-run-6.png" type="Texture" id=11]
+[ext_resource path="res://assets/player/hurt/player-hurt-1.png" type="Texture" id=12]
+[ext_resource path="res://assets/player/hurt/player-hurt-2.png" type="Texture" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -22,14 +22,14 @@ animations = [ {
 "name": "idle",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "hurt",
-"speed": 8.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "run",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "hurt",
 "speed": 8.0
 } ]
 
@@ -58,7 +58,7 @@ speed = 350
 scale = Vector2( 3, 3 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
+frame = 3
 playing = true
 offset = Vector2( 0, -5 )
 _sections_unfolded = [ "Transform" ]
