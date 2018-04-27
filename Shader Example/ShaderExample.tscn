@@ -40,7 +40,7 @@ _sections_unfolded = [ "Material", "Transform" ]
 [node name="Blur" type="Sprite" parent="." index="1"]
 
 material = SubResource( 2 )
-position = Vector2( 426.339, 244.058 )
+position = Vector2( 440.624, 244.058 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Material", "Transform" ]
