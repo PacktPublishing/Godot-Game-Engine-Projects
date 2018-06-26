@@ -7,10 +7,7 @@ path="res://.import/golf_windmill.dae-9f1084a0af58931667ac2e93b3e61eed.scn"
 [deps]
 
 source_file="res://assets/dae/golf_windmill.dae"
-source_md5="727de99552a804ae26462ebd857eebe9"
-
 dest_files=[ "res://.import/golf_windmill.dae-9f1084a0af58931667ac2e93b3e61eed.scn" ]
-dest_md5="1b663dcbbd007030b892413f068804ea"
 
 [params]
 

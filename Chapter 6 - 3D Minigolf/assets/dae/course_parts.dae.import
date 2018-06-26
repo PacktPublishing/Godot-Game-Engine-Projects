@@ -7,10 +7,7 @@ path="res://.import/course_parts.dae-4da1195347aecc2f52514b442543c573.scn"
 [deps]
 
 source_file="res://assets/dae/course_parts.dae"
-source_md5="bcc9928b81ee9610fbc5bee34fa81255"
-
 dest_files=[ "res://.import/course_parts.dae-4da1195347aecc2f52514b442543c573.scn" ]
-dest_md5="90c5caebb1299bcfb6dcef2c79e9e206"
 
 [params]
 

@@ -69,9 +69,9 @@ func animate_angle(delta):
 		angle_change = 1
 
 func set_start_angle():
-	var hole_pos2 = Vector2($Hole.transform.origin.z, $Hole.transform.origin.x)
-	var ball_pos2 = Vector2($Ball.transform.origin.z, $Ball.transform.origin.x)
-	hole_dir = (ball_pos2 - hole_pos2).angle()
+	var hole_pos = Vector2($Hole.transform.origin.z, $Hole.transform.origin.x)
+	var ball_pos = Vector2($Ball.transform.origin.z, $Ball.transform.origin.x)
+	hole_dir = (ball_pos - hole_pos).angle()
 	$Arrow.rotation.y = hole_dir
 
 func _on_Ball_stopped():

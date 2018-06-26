@@ -24,4 +24,4 @@ func _process(delta):
 		$GimbalIn.rotate_x(-cam_speed * delta)
 	if Input.is_action_pressed('cam_down'):
 		$GimbalIn.rotate_x(cam_speed * delta)
-	$GimbalIn.rotation.x = clamp($GimbalIn.rotation.x, -PI/2, -0.1)
+	$GimbalIn.rotation.x = clamp($GimbalIn.rotation.x, -PI/2, -0.2)

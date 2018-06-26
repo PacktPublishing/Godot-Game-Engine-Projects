@@ -8,10 +8,7 @@ path.etc2="res://.import/02___Default_normal.png-27af5c69f999d12a5592470e98021bd
 [deps]
 
 source_file="res://assets/golf_ball/textures/02___Default_normal.png"
-source_md5="4ed37677b3d5f1870a8004f8d4fc0414"
-
 dest_files=[ "res://.import/02___Default_normal.png-27af5c69f999d12a5592470e98021bd4.s3tc.stex", "res://.import/02___Default_normal.png-27af5c69f999d12a5592470e98021bd4.etc2.stex" ]
-dest_md5="736ea161761bcf01d9c1770c86134151"
 
 [params]
 

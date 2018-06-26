@@ -7,10 +7,7 @@ path="res://.import/scene.gltf-2e22ecf63da9a3facc9a9888b5233be6.scn"
 [deps]
 
 source_file="res://assets/golf_ball/scene.gltf"
-source_md5="b2245449ec1b99a2ef7674dec632d22d"
-
 dest_files=[ "res://.import/scene.gltf-2e22ecf63da9a3facc9a9888b5233be6.scn" ]
-dest_md5="9f68cb8dffb0f3f17d7c1554c1334a29"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/bar_green.png-e91fcb270800901fbeeba65129739600.stex"
 [deps]
 
 source_file="res://assets/bar_green.png"
-source_md5="4a1e0fc2a0b955648d5494af50d0ad2c"
-
 dest_files=[ "res://.import/bar_green.png-e91fcb270800901fbeeba65129739600.stex" ]
-dest_md5="72392091216563e321ee88c2b5818b69"
 
 [params]
 
