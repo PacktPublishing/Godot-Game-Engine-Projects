@@ -7,10 +7,7 @@ path="res://.import/doorGreen_lock.png-670cc8f0f148ea8c1bc3c748c0dcb82a.stex"
 [deps]
 
 source_file="res://assets/doorGreen_lock.png"
-source_md5="9eeee3f823b1cf7d45e6b62def0e2760"
-
 dest_files=[ "res://.import/doorGreen_lock.png-670cc8f0f148ea8c1bc3c748c0dcb82a.stex" ]
-dest_md5="7da1739f8a3b6c26ef2527088fec27c9"
 
 [params]
 

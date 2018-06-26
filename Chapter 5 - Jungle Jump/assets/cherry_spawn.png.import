@@ -7,10 +7,7 @@ path="res://.import/cherry_spawn.png-a13cb2d26d6f06f8debe938614c8f982.stex"
 [deps]
 
 source_file="res://assets/cherry_spawn.png"
-source_md5="52097c813fe5aa603bdaa60d37ee3d13"
-
 dest_files=[ "res://.import/cherry_spawn.png-a13cb2d26d6f06f8debe938614c8f982.stex" ]
-dest_md5="a9bd1623d274e5e0108e65eb5f69690b"
 
 [params]
 

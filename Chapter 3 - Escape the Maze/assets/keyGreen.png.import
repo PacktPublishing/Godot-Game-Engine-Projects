@@ -7,10 +7,7 @@ path="res://.import/keyGreen.png-72238461a208ef4c0cb79119cd6df8fc.stex"
 [deps]
 
 source_file="res://assets/keyGreen.png"
-source_md5="13fb55dba1556a97fa2d54e0d8c25b29"
-
 dest_files=[ "res://.import/keyGreen.png-72238461a208ef4c0cb79119cd6df8fc.stex" ]
-dest_md5="4184b1594a36490527b86f5e9733adda"
 
 [params]
 

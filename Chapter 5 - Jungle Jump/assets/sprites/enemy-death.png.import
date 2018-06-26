@@ -7,10 +7,7 @@ path="res://.import/enemy-death.png-84f5ace8edf644b85eb714348a483237.stex"
 [deps]
 
 source_file="res://assets/sprites/enemy-death.png"
-source_md5="ac815579fcdbf6113666bb0f97564420"
-
 dest_files=[ "res://.import/enemy-death.png-84f5ace8edf644b85eb714348a483237.stex" ]
-dest_md5="3d823740b8357122b382dba5b0283bdd"
 
 [params]
 

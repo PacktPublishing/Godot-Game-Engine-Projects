@@ -7,10 +7,7 @@ path="res://.import/cherry.png-a942113a989833304133bcaa5751951c.stex"
 [deps]
 
 source_file="res://assets/sprites/cherry.png"
-source_md5="bf4f4237887c4f7355e2b8020cf82753"
-
 dest_files=[ "res://.import/cherry.png-a942113a989833304133bcaa5751951c.stex" ]
-dest_md5="1d60200bcd7de6890493c387c9f1e728"
 
 [params]
 

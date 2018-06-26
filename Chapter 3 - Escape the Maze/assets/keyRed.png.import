@@ -7,10 +7,7 @@ path="res://.import/keyRed.png-91d116c4ad3e9aa26fdbfef31fda32f4.stex"
 [deps]
 
 source_file="res://assets/keyRed.png"
-source_md5="f595d151ac772404dc72934ec5f78fce"
-
 dest_files=[ "res://.import/keyRed.png-91d116c4ad3e9aa26fdbfef31fda32f4.stex" ]
-dest_md5="2cf8fb039fb6915f6923ad291f3efcd8"
 
 [params]
 

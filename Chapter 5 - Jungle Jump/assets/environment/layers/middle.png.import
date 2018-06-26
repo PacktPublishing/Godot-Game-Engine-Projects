@@ -7,10 +7,7 @@ path="res://.import/middle.png-da76e104f6ef40c8e99146cdbac67732.stex"
 [deps]
 
 source_file="res://assets/environment/layers/middle.png"
-source_md5="97e203facb3c4ed2f3ff1e773a775ce1"
-
 dest_files=[ "res://.import/middle.png-da76e104f6ef40c8e99146cdbac67732.stex" ]
-dest_md5="d4b2b28d0a0fcf1c5bc603cd11fd29fd"
 
 [params]
 

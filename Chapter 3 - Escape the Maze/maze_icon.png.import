@@ -7,10 +7,7 @@ path="res://.import/maze_icon.png-ecf3621c450bb74eee04db415c791682.stex"
 [deps]
 
 source_file="res://maze_icon.png"
-source_md5="47e0652bbcc4d218eaedb4329365efe4"
-
 dest_files=[ "res://.import/maze_icon.png-ecf3621c450bb74eee04db415c791682.stex" ]
-dest_md5="3b5d44deff01e9719cd53d72eee4f907"
 
 [params]
 

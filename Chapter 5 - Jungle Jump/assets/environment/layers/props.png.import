@@ -7,10 +7,7 @@ path="res://.import/props.png-c25baee756ebd8196bff50ce3e504f54.stex"
 [deps]
 
 source_file="res://assets/environment/layers/props.png"
-source_md5="a18949e323b1767f90798403bfa9fa27"
-
 dest_files=[ "res://.import/props.png-c25baee756ebd8196bff50ce3e504f54.stex" ]
-dest_md5="05676ea9034c60b6342ba0674eaca32c"
 
 [params]
 

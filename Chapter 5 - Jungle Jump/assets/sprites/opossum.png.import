@@ -7,10 +7,7 @@ path="res://.import/opossum.png-5326abfccb94a12d8ef06b4e238acc38.stex"
 [deps]
 
 source_file="res://assets/sprites/opossum.png"
-source_md5="2d619c7fc25e0831637618e460ab92cc"
-
 dest_files=[ "res://.import/opossum.png-5326abfccb94a12d8ef06b4e238acc38.stex" ]
-dest_md5="9dec22d1858182f70846b70d79739fe4"
 
 [params]
 

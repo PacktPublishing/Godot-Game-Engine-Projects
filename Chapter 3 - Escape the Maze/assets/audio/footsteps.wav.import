@@ -7,10 +7,7 @@ path="res://.import/footsteps.wav-e6fcbc1c25310b07b67dde2140dfa87e.sample"
 [deps]
 
 source_file="res://assets/audio/footsteps.wav"
-source_md5="ec2f8e7d1271ab01004e16f4c529c1d8"
-
 dest_files=[ "res://.import/footsteps.wav-e6fcbc1c25310b07b67dde2140dfa87e.sample" ]
-dest_md5="7f075ed6ec1a89f3c58de7c5138e6285"
 
 [params]
 

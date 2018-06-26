@@ -7,10 +7,7 @@ path="res://.import/gem.png-c28d3753a9c05558c8bb68b0051f67e8.stex"
 [deps]
 
 source_file="res://assets/sprites/gem.png"
-source_md5="b0ef6efe21f94eebf58abbc0240447f0"
-
 dest_files=[ "res://.import/gem.png-c28d3753a9c05558c8bb68b0051f67e8.stex" ]
-dest_md5="3b64706e43d3b9829454047198483899"
 
 [params]
 

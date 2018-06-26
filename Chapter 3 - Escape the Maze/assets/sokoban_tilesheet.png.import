@@ -7,10 +7,7 @@ path="res://.import/sokoban_tilesheet.png-40f1029de4e6a234f19e812d6ab0e52a.stex"
 [deps]
 
 source_file="res://assets/sokoban_tilesheet.png"
-source_md5="79d807bf6634461060ac1199af0966c9"
-
 dest_files=[ "res://.import/sokoban_tilesheet.png-40f1029de4e6a234f19e812d6ab0e52a.stex" ]
-dest_md5="2e4622ca3f8eceaa5208572d16ff640a"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/win.ogg-dfe7855217cf19f5da224053b9b86db8.oggstr"
 [deps]
 
 source_file="res://assets/audio/win.ogg"
-source_md5="ff5a0f38261b9a9f57e91460a8681198"
-
 dest_files=[ "res://.import/win.ogg-dfe7855217cf19f5da224053b9b86db8.oggstr" ]
-dest_md5="4673eab0f94ac010f3521d4922f924bb"
 
 [params]
 

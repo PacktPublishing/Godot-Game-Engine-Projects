@@ -7,10 +7,7 @@ path="res://.import/gem_spawn.png-c50be4eaa52e16b7ca2399cec6e65683.stex"
 [deps]
 
 source_file="res://assets/gem_spawn.png"
-source_md5="0d3100552701277308b2d59210c0b34e"
-
 dest_files=[ "res://.import/gem_spawn.png-c50be4eaa52e16b7ca2399cec6e65683.stex" ]
-dest_md5="3181506ebdb125c43f8cc8d8ce32fa46"
 
 [params]
 

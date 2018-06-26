@@ -7,10 +7,7 @@ path="res://.import/tileset.png-ee6456ebb8a907b1c59c4edb4ae76011.stex"
 [deps]
 
 source_file="res://assets/environment/layers/tileset.png"
-source_md5="db1342e18dd58977563f7d3691700f30"
-
 dest_files=[ "res://.import/tileset.png-ee6456ebb8a907b1c59c4edb4ae76011.stex" ]
-dest_md5="ed2af71a0a5c53bb5378050cb3325fc3"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/back.png-e66da774a57847ad82ea4532e090f376.stex"
 [deps]
 
 source_file="res://assets/environment/layers/back.png"
-source_md5="d7678242fcc92af2b001aed53dc42863"
-
 dest_files=[ "res://.import/back.png-e66da774a57847ad82ea4532e090f376.stex" ]
-dest_md5="5b0e907f3b89451870bf01097ef38a48"
 
 [params]
 

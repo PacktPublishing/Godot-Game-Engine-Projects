@@ -7,10 +7,7 @@ path="res://.import/coin_pickup.ogg-779b2375a96f9a5d716132c9ae9bc908.oggstr"
 [deps]
 
 source_file="res://assets/audio/coin_pickup.ogg"
-source_md5="a27f69f9218ce0299c9347518c958612"
-
 dest_files=[ "res://.import/coin_pickup.ogg-779b2375a96f9a5d716132c9ae9bc908.oggstr" ]
-dest_md5="5796b2548b85fb87d1d3d6e4bae98149"
 
 [params]
 
