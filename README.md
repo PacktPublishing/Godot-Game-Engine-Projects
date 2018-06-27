@@ -54,8 +54,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 * Unity Virtual Reality Projects - Second Edition [[Packt]](https://www.packtpub.com/game-development/unity-virtual-reality-projects-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788478809) [[Amazon]](https://www.amazon.com/dp/1788478800)
 
 ## Get to Know the Author
-**Chris Bradfield**
-Chris Bradfield has been working in the internet technology space for more than 25 years. He has worked in the online gaming space for a number of successful MMOs and social gaming publishers in South Korea and the United States. Throughout his game industry career, he has served as a game designer, developer, product manager, and business development executive.
+**Chris Bradfield** has been working in the internet technology space for more than 25 years. He has worked in the online gaming space for a number of successful MMOs and social gaming publishers in South Korea and the United States. Throughout his game industry career, he has served as a game designer, developer, product manager, and business development executive.
 In 2012, he discovered his love for teaching and founded KidsCanCode to provide programming instruction and curriculum to middle and high school students. He is also a member of the Godot Engine documentation team and works to provide learning resources for game development students around the world.
 
 ### Suggestions and Feedback
