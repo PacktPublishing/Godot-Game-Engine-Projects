@@ -35,7 +35,7 @@ var screensize = Vector2(480, 720)
 ```
 
 **Following is what you need for this book:**
-Godot Engine Game Development Projects is for both new users and experienced developers, who want to learn to make games using a modern game engine. Some prior programming experience in C and C++ is recommended.
+Godot Engine Game Development Projects is for both new users and experienced developers, who want to learn to make games using a modern game engine. Some prior programming experience is recommended.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-7).
 
