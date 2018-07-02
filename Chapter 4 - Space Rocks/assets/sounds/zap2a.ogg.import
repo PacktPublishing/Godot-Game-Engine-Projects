@@ -7,10 +7,7 @@ path="res://.import/zap2a.ogg-0abb2404926e25f60e83fef404c8c4bb.oggstr"
 [deps]
 
 source_file="res://assets/sounds/zap2a.ogg"
-source_md5="fcbbf119cb23e03c7490a26ae1ce9afa"
-
 dest_files=[ "res://.import/zap2a.ogg-0abb2404926e25f60e83fef404c8c4bb.oggstr" ]
-dest_md5="f38de94a6c3eaa9445ecf3e5efabc299"
 
 [params]
 

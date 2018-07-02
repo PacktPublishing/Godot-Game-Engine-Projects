@@ -7,10 +7,7 @@ path="res://.import/corona.png-0d864ff185c27162e530fe744dfcfb59.stex"
 [deps]
 
 source_file="res://assets/corona.png"
-source_md5="30c1d863e693a501a4ce7cad7a6ef219"
-
 dest_files=[ "res://.import/corona.png-0d864ff185c27162e530fe744dfcfb59.stex" ]
-dest_md5="6403ab759c805efb661bfe49b070ffca"
 
 [params]
 

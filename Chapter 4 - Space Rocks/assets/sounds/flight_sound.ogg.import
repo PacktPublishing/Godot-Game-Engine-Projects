@@ -7,10 +7,7 @@ path="res://.import/flight_sound.ogg-ef0dc3f8bae35ff68c7feb7f100375a4.oggstr"
 [deps]
 
 source_file="res://assets/sounds/flight_sound.ogg"
-source_md5="75250a8368a1316c69485fe9fff8a7da"
-
 dest_files=[ "res://.import/flight_sound.ogg-ef0dc3f8bae35ff68c7feb7f100375a4.oggstr" ]
-dest_md5="f9423e26eae297c4bf7c6fe1f989aad9"
 
 [params]
 

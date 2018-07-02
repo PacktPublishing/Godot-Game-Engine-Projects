@@ -7,10 +7,7 @@ path="res://.import/enemy_laser.wav-b43357d9ebc8f27d9b668eef45d837b9.sample"
 [deps]
 
 source_file="res://assets/sounds/enemy_laser.wav"
-source_md5="f6759ed0c89f7c0b72b695f36674a649"
-
 dest_files=[ "res://.import/enemy_laser.wav-b43357d9ebc8f27d9b668eef45d837b9.sample" ]
-dest_md5="1cc241341d7358ee3580d02452a14ce3"
 
 [params]
 

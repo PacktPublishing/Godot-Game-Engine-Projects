@@ -7,10 +7,7 @@ path="res://.import/Funky-Gameplay_Looping.ogg-202bedac505a84b35d4d3b1bf9ee7a73.
 [deps]
 
 source_file="res://assets/sounds/Funky-Gameplay_Looping.ogg"
-source_md5="499074862c1c15aaab0a536d037a3f04"
-
 dest_files=[ "res://.import/Funky-Gameplay_Looping.ogg-202bedac505a84b35d4d3b1bf9ee7a73.oggstr" ]
-dest_md5="3593dbe48838e31568aa6f204a7739cc"
 
 [params]
 

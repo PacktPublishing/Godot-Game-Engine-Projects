@@ -7,10 +7,7 @@ path="res://.import/synthetic_thunder_short.wav-9ebf3fa4d1fc7515b87f0a2b6c873928
 [deps]
 
 source_file="res://assets/sounds/synthetic_thunder_short.wav"
-source_md5="5e0ee5181d8b06941c8088bca9bb91e0"
-
 dest_files=[ "res://.import/synthetic_thunder_short.wav-9ebf3fa4d1fc7515b87f0a2b6c873928.sample" ]
-dest_md5="95c09f66eea580e1e05159382257dbaa"
 
 [params]
 
