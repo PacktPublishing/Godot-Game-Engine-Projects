@@ -58,13 +58,17 @@ position = Vector2( 651.797, 320.88 )
 
 position = Vector2( 476, 528 )
 
-[node name="HUD" parent="CanvasLayer" index="0"]
-
-visible = false
-
 [node name="Door" parent="." index="10" instance=ExtResource( 3 )]
 
 position = Vector2( 376, 528 )
+
+[node name="PickupSound" parent="." index="11"]
+
+pitch_scale = 1.0
+
+[node name="Music" parent="." index="12"]
+
+pitch_scale = 1.0
 
 [node name="MovingPlatform" parent="." index="13" instance=ExtResource( 4 )]
 
