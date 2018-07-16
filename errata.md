@@ -16,11 +16,12 @@ p.49 - [CODE] : $MarginContainer/TimeLabel.txt -> $MarginContainer/TimeLabel.tex
 p.76 - [MISSING] : Select the Enemy node, click on the "Node" tab, and add the enemy to the "enemies" group
 
 p.76 - [CODE]: Missing indentation.
-        ```
-        if area.has_method('pickup'):
-            area.pickup()
-            if area.type == 'key_red':
-                emit_signal('grabbed_key')
-            if area.type == 'star':
-                emit_signal('win')
-        ```
+
+    ```
+    if area.has_method('pickup'):
+        area.pickup()
+        if area.type == 'key_red':
+            emit_signal('grabbed_key')
+        if area.type == 'star':
+            emit_signal('win')
+    ```
