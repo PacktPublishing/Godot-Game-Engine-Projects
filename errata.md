@@ -9,6 +9,15 @@ p.5 - [GRAMMAR] : "There never" -> "There's never"
 
 ## Chapter 2
 
+p.40 - [CODE]: Missing var. At p.44 "c.screensize" can't be ok without this.
+
+    extends Area2D
+    
+    var screensize = Vector2() ## this line is missing
+    
+    func pickup():
+        queue_free()
+        
 p.49 - [CODE] : $MarginContainer/TimeLabel.txt -> $MarginContainer/TimeLabel.text
 
 ## Chapter 3
