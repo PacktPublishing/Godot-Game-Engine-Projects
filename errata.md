@@ -33,6 +33,23 @@ p.76 - [CODE] : Missing indentation.
         if area.type == 'star':
             emit_signal('win')
 
+## Chapter 4
+
+p.119 - [CODE] : missing declaration: var `screensize`
+
+Now, add this to Main.gd:
+
+   export (PackedScene) var Rock
+
+   var screensize = Vector2() ## this line is missing
+
+   func _ready():
+       randomize()
+       screensize = get_viewport().get_visible_rect().size
+       $Player.screensize = screensize
+       for i in range(3):
+           spawn_rock(3)
+
 ## Chapter 5
 
 p.166 - [CODE] : missing newline character:
