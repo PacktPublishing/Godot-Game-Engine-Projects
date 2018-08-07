@@ -52,7 +52,16 @@ Now, add this to Main.gd:
 
 ## Chapter 5
 
+p.165 - [MISSING] : missing suggested values for player properties
+
+In the Inspector, set the `run_speed`, `jump_speed`, and `gravity` to values of
+`150`, `-300`, and `750` respectively.
+
 p.166 - [CODE] : missing newline character:
 
     if state == JUMP and velocity.y > 0:
-        new_anim = 'jump_down'Testing the moves
+        new_anim = 'jump_down'
+
+p.166 - [FORMATTING] : header text is misplaced
+
+Testing the moves
