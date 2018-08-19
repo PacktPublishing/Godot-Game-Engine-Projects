@@ -3,6 +3,8 @@
 This document lists any errors and/or corrections to the printed material of the book. This does not indicate errors with the code in this repository, which is
 tested and updated separately.
 
+**NOTE:** Page numbers are for the print version. Ebook page numbers may be 2-3 pages lower.
+
 ## Chapter 1
 
 p.5 - [GRAMMAR] : "There never" -> "There's never"
@@ -35,7 +37,7 @@ p.76 - [CODE] : Missing indentation.
 
 ## Chapter 4
 
-p.119 - [CODE] : missing declaration: var `screensize`
+p.121 - [CODE] : missing declaration: var `screensize`
 
 Now, add this to Main.gd:
 
@@ -52,16 +54,16 @@ Now, add this to Main.gd:
 
 ## Chapter 5
 
-p.165 - [MISSING] : missing suggested values for player properties
+p.168 - [MISSING] : missing suggested values for player properties
 
 In the Inspector, set the `run_speed`, `jump_speed`, and `gravity` to values of
 `150`, `-300`, and `750` respectively.
 
-p.166 - [CODE] : missing newline character:
+p.169 - [CODE] : missing newline character:
 
     if state == JUMP and velocity.y > 0:
         new_anim = 'jump_down'
 
-p.166 - [FORMATTING] : header text is misplaced
+p.169 - [FORMATTING] : header text is misplaced
 
 Testing the moves
