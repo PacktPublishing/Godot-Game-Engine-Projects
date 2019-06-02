@@ -44,7 +44,7 @@ func take_damage(amount):
 func explode():
 	speed = 0
 	$GunTimer.stop()
-	$CollisionShape2D.disabled = true
+	$CollisionShape2D.call_deferred("set_disabled", true)
 	$Sprite.hide()
 	$Explosion.show()
 	$Explosion/AnimationPlayer.play("explosion")
