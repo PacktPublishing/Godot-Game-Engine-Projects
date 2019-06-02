@@ -14,7 +14,7 @@ export (float) var fire_rate
 export (PackedScene) var Bullet
 
 enum {INIT, ALIVE, INVULNERABLE, DEAD}
-var state = null
+var state = INIT
 var thrust = Vector2()
 var rotation_dir = 0
 var can_shoot = true
@@ -25,7 +25,7 @@ var shield = 0 setget set_shield
 
 func _ready():
 	active_guns = [$GunCenter]
-	change_state(INIT)
+	#change_state(INIT)
 	$GunTimer.wait_time = fire_rate
 
 func start():
@@ -105,18 +105,18 @@ func change_state(new_state):
 	print("changing state to ", state)
 	match state:
 		INIT:
-			$CollisionShape2D.disabled = true
+			$CollisionShape2D.call_deferred("set_disabled", true)
 			$Sprite.modulate.a = 0.5
 		ALIVE:
-			$CollisionShape2D.disabled = false
+			$CollisionShape2D.call_deferred("set_disabled", false)
 			$Sprite.modulate.a = 1.0
 		INVULNERABLE:
-			$CollisionShape2D.disabled = true
+			$CollisionShape2D.call_deferred("set_disabled", true)
 			$Sprite.modulate.a = 0.5
 			$InvulnerabilityTimer.start()
 		DEAD:
 			$EngineSound.stop()
-			$CollisionShape2D.disabled = true
+			$CollisionShape2D.call_deferred("set_disabled", true)
 			$Sprite.hide()
 			linear_velocity = Vector2()
 			emit_signal("dead")
