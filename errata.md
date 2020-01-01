@@ -24,6 +24,8 @@ p.49 - [CODE] : `$MarginContainer/TimeLabel.txt` -> `$MarginContainer/TimeLabel.
 
 ## Chapter 3
 
+p.73 - In the first sentence, `Camera` should be `Camera2D`.
+
 p.76 - [MISSING] : Select the Enemy node, click on the "Node" tab, and add the enemy to the "enemies" group
 
 p.76 - [CODE] : Missing indentation.
