@@ -54,6 +54,17 @@ Now, add this to Main.gd:
         for i in range(3):
             spawn_rock(3)
 
+p.150 - [CODE] : missing line in HUD `update_shield()`. We're passing a ratio, so we need to multiply by 100 to scale it for the bar.
+
+    func update_shield(value):
+        value *= 100
+        ShieldBar.texture_progress = green_bar
+        if value < 40:
+            ShieldBar.texture_progress = red_bar
+        elif value < 70:
+            ShieldBar.texture_progress = yellow_bar
+        ShieldBar.value = value
+
 ## Chapter 5
 
 p.168 - [MISSING] : missing suggested values for player properties
