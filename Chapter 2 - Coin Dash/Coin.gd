@@ -13,7 +13,7 @@ func _ready():
 								Tween.EASE_IN_OUT)
 
 func pickup():
-	monitoring = false
+	monitorable = false
 	$Tween.start()
 
 func _on_Tween_tween_completed( object, key ):
