@@ -1,6 +1,6 @@
 # Godot Engine Game Development Projects
 
-<a href="https://www.packtpub.com/game-development/godot-game-engine-projects?utm_source=github&utm_medium=repository&utm_campaign=9781788831505"><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B09788_MockupCover_new.png" alt="Godot Engine Game Development Projects" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/game-development/godot-game-engine-projects?utm_source=github&utm_medium=repository&utm_campaign=9781788831505"><img src="https://static.packt-cdn.com/products/9781788831505/cover/smaller" alt="Godot Engine Game Development Projects" height="256px" align="right"></a>
 
 This is the code repository for [Godot Engine Game Development Projects](https://www.packtpub.com/game-development/godot-game-engine-projects?utm_source=github&utm_medium=repository&utm_campaign=9781788831505), published by Packt.
 
@@ -56,6 +56,3 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Author
 **Chris Bradfield** has been working in the internet technology space for more than 25 years. He has worked in the online gaming space for a number of successful MMOs and social gaming publishers in South Korea and the United States. Throughout his game industry career, he has served as a game designer, developer, product manager, and business development executive.
 In 2012, he discovered his love for teaching and founded KidsCanCode to provide programming instruction and curriculum to middle and high school students. He is also a member of the Godot Engine documentation team and works to provide learning resources for game development students around the world.
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
