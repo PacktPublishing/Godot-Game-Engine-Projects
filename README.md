@@ -56,3 +56,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Author
 **Chris Bradfield** has been working in the internet technology space for more than 25 years. He has worked in the online gaming space for a number of successful MMOs and social gaming publishers in South Korea and the United States. Throughout his game industry career, he has served as a game designer, developer, product manager, and business development executive.
 In 2012, he discovered his love for teaching and founded KidsCanCode to provide programming instruction and curriculum to middle and high school students. He is also a member of the Godot Engine documentation team and works to provide learning resources for game development students around the world.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781788831505">https://packt.link/free-ebook/9781788831505 </a> </p>
